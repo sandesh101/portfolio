@@ -21,19 +21,23 @@ const Main = () => {
           and modern development practices.
         </p>
         <div className="flex gap-5 mt-6">
-          <Button
-            buttonText="View My Work"
-            buttonColor="#3A86FF"
-            isIcon={true}
-            icon={
-              <MoveRight className="transition-transform duration-300 group-hover:translate-x-1" />
-            }
-          />
-          <Button
-            buttonText="Contact Me"
-            buttonColor="#0A0A0A"
-            isSecondary={true}
-          />
+          <a href="#project">
+            <Button
+              buttonText="View My Work"
+              buttonColor="#3A86FF"
+              isIcon={true}
+              icon={
+                <MoveRight className="transition-transform duration-300 group-hover:translate-x-1" />
+              }
+            />
+          </a>
+          <a href="#contact">
+            <Button
+              buttonText="Contact Me"
+              buttonColor="#0A0A0A"
+              isSecondary={true}
+            />
+          </a>
         </div>
       </main>
     </div>
