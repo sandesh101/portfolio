@@ -18,7 +18,7 @@ const Contact = () => {
 
   return (
     <section
-      className="mt-20 sm:mt-40 px-4 sm:px-6 lg:mx-[13%] py-10 border border-[#323232]"
+      className="m-2 mt-18 sm:mt-40 px-4 sm:px-6 lg:mx-[13%] py-10 border border-[#323232] rounded-lg"
       id="contact"
     >
       {/* Heading */}
