@@ -19,7 +19,7 @@ const Navbar = () => {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="text-[18px] cursor-pointer hover:text-[#e1e1e1] duration-100 ease-in"
+                  className="text-[18px] hover:text-[#e1e1e1] duration-100 ease-in"
                 >
                   {link.name}
                 </a>

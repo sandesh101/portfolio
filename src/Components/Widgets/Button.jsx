@@ -7,7 +7,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`group flex items-center cursor-pointer bg-[#3A86FF] text-white gap-3 py-2 ${
+      className={`group flex items-center justify-center cursor-pointer bg-[#3A86FF] text-white gap-3 py-2 w-full ${
         isIcon ? "px-7" : "px-4"
       } rounded-2xl font-medium transition-all
       ${
