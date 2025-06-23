@@ -27,7 +27,7 @@ const Main = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mt-8">
-          <a href="#project">
+          <a href="#projects">
             <Button
               buttonText="View My Work"
               buttonColor="#3A86FF"
