@@ -12,10 +12,12 @@ const Navbar = () => {
       <div className="flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <div>
-          <p className="font-bold text-2xl">
-            Sandesh
-            <span className="text-[#3A86FF] relative top-1">&bull;</span>
-          </p>
+          <a href="/">
+            <p className="font-bold text-2xl">
+              Sandesh
+              <span className="text-[#3A86FF] relative top-1">&bull;</span>
+            </p>
+          </a>
         </div>
 
         <ul className="hidden md:flex gap-6">
