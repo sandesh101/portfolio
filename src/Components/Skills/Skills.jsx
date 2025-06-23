@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section
       className="flex flex-col px-4 sm:px-10 lg:px-[13%] mt-10"
-      id="skills"
+      id="about"
     >
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
         Current Technologies
