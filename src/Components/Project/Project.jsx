@@ -4,7 +4,7 @@ import ProjectCard from "../Widgets/ProjectCard";
 
 const Project = () => {
   return (
-    <section className="px-[13%] mt-60" id="project">
+    <section className="px-[13%] mt-60" id="projects">
       <div className="flex justify-between">
         <h1 className="text-6xl font-bold">My Project</h1>
         <a href="https://github.com/sandesh101/" target="_blank">
