@@ -55,12 +55,9 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`md:hidden fixed top-0 right-0 h-screen w-64 bg-[#0A0A0A] z-50 px-6 py-4 transform transition-all duration-300 ease-in-out
-        ${
-          menuOpen
-            ? "translate-x-0 opacity-100"
-            : "translate-x-full opacity-0 pointer-events-none"
-        }`}
+        className={`md:hidden fixed top-0 right-0 h-screen w-64 bg-[#0A0A0A] z-50 px-6 py-4 transition-transform duration-300 ease-in-out transform
+    ${menuOpen ? "translate-x-0" : "translate-x-full"}
+  `}
       >
         <div className="flex justify-end">
           <X
