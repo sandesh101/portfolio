@@ -1,5 +1,6 @@
 import Button from "../Widgets/Button";
 import { MoveRight } from "lucide-react";
+import GlareHover from "../../particles-anim/Animations/GlareHover/GlareHover";
 
 const Main = () => {
   return (
@@ -38,11 +39,23 @@ const Main = () => {
             />
           </a>
           <a href="#contact">
-            <Button
-              buttonText="Contact Me"
-              buttonColor="#0A0A0A"
-              isSecondary={true}
-            />
+            <GlareHover
+              glareColor="#ffffff"
+              glareOpacity={0.3}
+              glareAngle={-30}
+              glareSize={300}
+              transitionDuration={800}
+              playOnce={false}
+              width="300px"
+              height="40px"
+            >
+              {/* <Button
+                buttonText="Contact Me"
+                buttonColor="#0A0A0A"
+                isSecondary={true}
+              /> */}
+              <h1>Contact Me</h1>
+            </GlareHover>
           </a>
         </div>
       </main>
