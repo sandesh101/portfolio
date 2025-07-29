@@ -49,11 +49,6 @@ const Main = () => {
               width="300px"
               height="40px"
             >
-              {/* <Button
-                buttonText="Contact Me"
-                buttonColor="#0A0A0A"
-                isSecondary={true}
-              /> */}
               <h1>Contact Me</h1>
             </GlareHover>
           </a>

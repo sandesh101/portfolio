@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <section
-      className="relative m-2 mt-18 sm:mt-40 px-4 sm:px-6 lg:mx-[13%] py-10 border border-[#323232] rounded-lg overflow-hidden"
+      className="relative m-2 mt-18 sm:mt-40 px-4 sm:px-6 lg:mx-[13%] py-7 border border-[#323232] rounded-lg overflow-hidden"
       id="contact"
     >
       {/* Particles Background */}
@@ -72,6 +72,19 @@ const Contact = () => {
             {contact.icon}
           </Link>
         ))}
+      </div>
+      <div className="flex justify-center mt-5 text-sm">
+        <p>
+          Inspired from{" "}
+          <a
+            href="https://andrijaweb.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:underline"
+          >
+            Andrija
+          </a>
+        </p>
       </div>
     </section>
   );
