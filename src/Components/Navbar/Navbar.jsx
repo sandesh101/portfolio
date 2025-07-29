@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "../Widgets/Button";
 import { links } from "../../constants/navItems";
 import { Download, Menu, X } from "lucide-react";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

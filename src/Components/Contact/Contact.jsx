@@ -1,5 +1,6 @@
 import { Facebook, Linkedin, Github } from "lucide-react";
 import Particles from "../../particles-anim/Backgrounds/Particles/Particles";
+import { Link } from "react-router";
 
 const Contact = () => {
   const contacts = [
@@ -61,15 +62,15 @@ const Contact = () => {
       {/* Social Icons */}
       <div className="mt-6 sm:mt-10 flex justify-center items-center gap-5">
         {contacts.map((contact, idx) => (
-          <a
+          <Link
             key={idx}
-            href={contact.link}
+            to={contact.link}
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 hover:bg-[#3A86FF22] rounded-full transition"
           >
             {contact.icon}
-          </a>
+          </Link>
         ))}
       </div>
     </section>
