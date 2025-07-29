@@ -1,4 +1,5 @@
 import { Facebook, Linkedin, Github } from "lucide-react";
+import Particles from "../../particles-anim/Backgrounds/Particles/Particles";
 
 const Contact = () => {
   const contacts = [
@@ -18,9 +19,23 @@ const Contact = () => {
 
   return (
     <section
-      className="m-2 mt-18 sm:mt-40 px-4 sm:px-6 lg:mx-[13%] py-10 border border-[#323232] rounded-lg"
+      className="relative m-2 mt-18 sm:mt-40 px-4 sm:px-6 lg:mx-[13%] py-10 border border-[#323232] rounded-lg overflow-hidden"
       id="contact"
     >
+      {/* Particles Background */}
+      <div className="absolute inset-0 w-ful -z-1">
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={500}
+          particleSpread={20}
+          speed={0.2}
+          particleBaseSize={100}
+          moveParticlesOnHover={false}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
+
       {/* Heading */}
       <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center">
         Let's work together
