@@ -2,13 +2,12 @@ import { useState } from "react";
 import Button from "../Widgets/Button";
 import { links } from "../../constants/navItems";
 import { Download, Menu, X } from "lucide-react";
-import { Link } from "react-router";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-40 backdrop-blur border-b border-[#2e2e2e]">
+    <nav className="fixed top-[10px] left-1/2 transform -translate-x-1/2 z-40 w-[95%] max-w-6xl backdrop-blur border border-[#2e2e2e] rounded-2xl shadow-md">
       {/* Top Navbar */}
       <div className="flex items-center justify-between px-4 py-3">
         {/* Logo */}
@@ -21,12 +20,13 @@ const Navbar = () => {
           </a>
         </div>
 
+        {/* WEB MENU */}
         <ul className="hidden md:flex gap-6">
           {links.map((link) => (
             <li key={link.name}>
               <a
                 href={link.href}
-                className="text-[18px] hover:text-[#e1e1e1] duration-100 ease-in"
+                className="text-[18px] inline-block transform hover:-translate-y-1 duration-200 ease-in-out"
               >
                 {link.name}
               </a>
